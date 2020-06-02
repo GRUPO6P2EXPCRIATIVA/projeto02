@@ -1,0 +1,23 @@
+<div class="alert alert-danger" role="alert"><h1 id="h1home">Dados da Covid-19 no Brasil Fonte: Relatos enviados</h1></div>
+<canvas id="line-chart" style="height:40vh; width:80vw">
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ["JAN","FEV","MARCO","ABRIL","MAIO"],
+    datasets: [{ 
+        data: [1000,2000,4500,6000,9000],
+        label: "Casos",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Casos de coronavirus no Brasil'
+    }
+  }
+});
+</script>
